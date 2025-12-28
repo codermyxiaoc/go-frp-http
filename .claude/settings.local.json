@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(go mod tidy:*)",
+      "Bash(go build:*)",
+      "Bash(dir \"C:\\\\Users\\\\ASUS\\\\Desktop\\\\frp\\\\go-frp-http\")",
+      "Bash(wc -l:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(rm:*)",
+      "Bash(rmdir:*)",
+      "mcp__github__create_repository",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

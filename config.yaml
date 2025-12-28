@@ -1,0 +1,41 @@
+#server
+max-idle-conns: 2000
+idle-conn-timeout: 90
+conn-chan-count: 2000
+
+#common
+keep-alive-time: 10
+http-port: 80
+main-port: 12345
+secret: coderxiaoc812728
+
+#limit
+enable-limit: false
+limit-buffer-size: 4096 #kb
+
+#tls
+enable-tls: false
+https-port: 443
+certificates:
+  czl.coderxiaoc.cn:
+    cert-path: C:\Users\ASUS\Desktop\frp\go-frp-http\server.crt
+    key-path: C:\Users\ASUS\Desktop\frp\go-frp-http\server.key
+  abc.coderxiaoc.cn:
+    cert-path: C:\Users\ASUS\Desktop\frp\go-frp-http\server.crt
+    key-path: C:\Users\ASUS\Desktop\frp\go-frp-http\server.key
+
+#client
+server-ip: 127.0.0.1
+connections:
+  - dns: czl.coderxiaoc.cn
+    local-port: 3000
+    task-port: 50001
+    type: http
+    secret: coderxiaoc812728
+  - dns: abc.coderxiaoc.cn
+    local-port: 8091
+    task-port: 50002
+    type: http
+    secret: coderxiaoc812728
+
+
